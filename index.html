@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A simple HTML document</title>
+	<script type="text/javascript" src="navigateTo.js"></script>
+</head>
+<body>
+
+	Start point X: <input id="startX" type='text' value='0'/> Y: <input id="startY" type='text'  value='1'/>
+	<br/>
+	End point X : <input id="endX" type='text' value='4'/> Y: <input id="endY" type='text' value='3'/>
+	<br/>
+	Matrix:
+	<br/>
+	<textArea id="matrix" style="width:300px;height:300px">
+[[0,0,0,1,0],
+[0,1,1,0,0],
+[0,0,0,1,1],
+[1,1,0,0,0],
+[0,0,0,0,1],]
+	</textArea>	
+	<br/>
+	<button onClick="clickHander();">Can navigate to</button>
+</body>
+</html>
