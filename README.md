@@ -6,25 +6,25 @@ The general idea is to consider possible paths from a starting point, iterating 
 
 Represent the matrix as a 2 dimensional array populated with 1s and 0
 e.g 
-
+```
 [[0,0,0,1,0],
 [0,1,1,0,0],
 [0,0,0,1,1],
 [1,1,0,0,0],
 [0,0,0,0,1],]
-
+```
 Define type point as being composed of N:int and M:int property
-
+```
 Point
 	n:int
 	m:int
-
+```
 Define method to get all valid neighbours of a certain point in the matrix where valid means that the point is not out of bounds and that value contained in the point is 0
-
+```
 getNeighbours(matrix:int[][], n:int, m:int):Point[]
-
+```
 For the body of the algorithm, it can be done iteratively or recursively. The operation is mostly identical. This example will be done recursively
-
+```
 canNavigateTo(matrix:int[][], startN:int, startM:int, destinationN:int, destinationM:int, currPath:Point[]):boolean
 	//The base condition
 	if startN == destinationN && startM == destinationM 
@@ -49,3 +49,4 @@ canNavigateTo(matrix:int[][], startN:int, startM:int, destinationN:int, destinat
 					break
 
 	return ret
+```
